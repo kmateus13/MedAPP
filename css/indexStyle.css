@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: 'Titillium Web', sans-serif
+}
+
+#esquerda{
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.primeira{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.segunda{
+    width: 45%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+   
+}
+
+.primeira h1{
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 60px;
+    letter-spacing: 4px;
+}
+
+
+.segunda h1{
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+}
+
+.segunda h4{
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 80px;
+}
+
+
+.campoInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=email], input[type=text], input[type=password], input[type=button]{
+    width: 30rem;
+    height: 2.5rem;
+    margin-bottom: 20px;
+    padding: 0px 50px;
+    font-size: 1.4rem;
+    border: none;
+    border-bottom: 1px solid #46abdf;
+}
+
+input:focus {
+    outline: none;
+}
+
+i{
+    font-size: 1.2rem;
+    width: 14px;
+    position: relative;
+    left: 13px;
+    top: -52px;
+    color: #46abdf;
+}
+
+.fa-eye{
+    top: -68px;
+    left: 450px;
+    cursor: pointer;
+}
+
+.fa-eye-slash{
+    top: -68px;
+    left: 449px;
+    cursor: pointer;
+}
+
+
+input[type=button] {
+    color: #fff;
+    border: none;
+    background-color: #46abdf;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #78c1e6;
+}
+
+
+p {
+    text-decoration: underline;
+    color: #46abdf;
+    cursor: pointer;
+}
+
+
+#direita{
+    width: 55%;
+}
+
+#carouselExampleIndicators{
+    height: 100%;
+}
+
+img{
+    height: 100vh;
+}
+
+dialog{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius:  .5rem;
+    box-shadow:0 0 1em rgb(0 0 0 / .3);
+    width: 350px;
+    height: 210px;
+    
+}
+
+dialog h1{
+    text-align: center;
+    background-color: rgb(240, 232, 232);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+dialog p{
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    top: 22%;
+    font-size: 1.3rem;
+    color: black;
+    cursor: auto;
+    margin-bottom: 0;
+}
+
+dialog .close{
+    position: absolute;
+    left: 50%;
+    top: 170px;
+    width: 6rem;
+    border: none;
+    background-color: #46abdf;
+    color: #fff;
+    transform: translate(-50%, 0%);
+    cursor: pointer;
+}
+
+dialog .close:hover{
+    background-color: #78c1e6;
+}
+ 
+
+
+@media (max-width: 1088px) {
+    #esquerda{
+        width: 50%;
+    }
+    #direita{
+        width: 50%;
+    }
+    
+}
+
+@media (max-width: 968px) {
+
+    body{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #esquerda{
+        width: 100%;
+        height: 65%;
+    }
+
+    .segunda{
+        width: 100%;
+    }
+
+    .segunda h1, .primeira h1{
+        flex: 1;
+        font-size: 3rem;
+    }
+
+    input[type=email], input[type=text], input[type=password], input[type=button]{
+        width: 25rem;
+    }
+
+    .fa-eye, .fa-eye-slash{
+        top: -65px;
+        left: 350px;
+        
+    }
+
+    #direita{
+        width: 100%;
+        height: 35%;
+    }
+
+    #carouselExampleIndicators{
+        height: 100%;
+    }
+    
+    img{
+        height: 35vh;
+    }
+    
+}

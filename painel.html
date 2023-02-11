@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylePainel.css">
+    <script src="./script/scriptPainel.js" defer></script>
+    <script src="https://kit.fontawesome.com/8c663173e7.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/4fdf45b2-e591-4fbc-b2e2-35a1350a625c.ico" type="image/x-icon">
+    <title>MedAPP</title>
+</head>
+
+<body>
+    <dialog>
+        <h1>MedAPP</h1>
+        <p></p>
+        <button class="close">OK</button>
+    </dialog>
+    <header>
+        <div id="menu-desktop">
+            <div class="logo">
+                <img src="./img/4fdf45b2-e591-4fbc-b2e2-35a1350a625c.png" alt="">
+                <h2>MedAPP</h2>
+            </div>
+            <nav class="navbar-desk">
+                <a onclick="abrirInicio()">Inicio</a>
+                <a onclick="abrirAgendar()">Agendar</a>
+                <a onclick="abrirConsultas()">Consultas</a>
+                <a onclick="abrirSobre()">Sobre</a>
+            </nav>
+            <div class="usuario">
+                <div class="foto"></div>
+                <div class="acoes">
+                    <h3 class="userLogado"></h3>
+                    <i class="fa-solid fa-right-from-bracket" onclick="sairDaConta()"></i>
+                </div>
+            </div>
+            <!-- Mobile -->
+            <i class="fa-solid fa-bars" id="open-nav"></i>
+            <nav id="navbar-mobile" >
+                <i class="fa-solid fa-x" id="close-nav"></i>
+                <div class="foto"></div>
+                <h3 class="userLogadoMobile"></h3>
+                <a onclick="abrirInicio()">Inicio</a>
+                <a onclick="abrirAgendar()">Agendar</a>
+                <a onclick="abrirConsultas()">Consultas</a>
+                <a onclick="abrirSobre()">Sobre</a>
+                <i class="fa-solid fa-right-from-bracket" onclick="sairDaConta()"></i>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="inicio" style="visibility: visible;" >
+            <h1>Bem Vindo ao MedAPP</h1>
+            <h2>Compromisso com quem mais precisa</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eum libero eius vitae. Nam, praesentium
+                dolorum excepturi dignissimos expedita quos et eaque nulla fugiat maiores enim odio, perferendis
+                reiciendis qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nemo suscipit officia
+                delectus harum consequuntur cupiditate eos veritatis illo commodi nostrum veniam ipsam, vero, incidunt
+                doloremque! Reprehenderit quisquam sed illo. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Velit, tenetur labore culpa doloribus quod quia ab corrupti modi accusantium voluptatem illo in. Velit
+                recusandae aut rem? Molestias provident error ipsa. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Illum dignissimos molestiae sed amet iste dicta ratione nemo laboriosam libero? Quis molestiae
+                beatae doloribus, temporibus dicta natus deleniti exercitationem nemo veritatis. Lorem ipsum, dolor sit
+                amet consectetur adipisicing elit. Ducimus suscipit veritatis laborum dolor quod accusantium? Minima,
+                eaque cum atque reprehenderit sit praesentium qui porro, iure accusamus amet quasi suscipit sunt.</p>
+        </div>
+        <div id="agendar" style="visibility: hidden;">
+            <h1>Agende sua Consulta</h1>
+            <div class="campoDinamico">
+                <h3 class="nomeUser"></h3>
+                <label class="emailUser"></label>
+            </div>
+
+            <div class="categorias">
+                <span>Especialidades:</span>
+                <select name="especialidades" id="especialidades" onchange="selected()">
+                    <option value="nulo">Selecione uma opcao</option>
+                    <option value="cardiologia">Cardiologia</option>
+                    <option value="dermatologia">Dermatologia</option>
+                    <option value="ginecologiaEObstetricia">Ginecologia E Obstetricia</option>
+                </select>
+            </div>
+            <div class="medicos">
+                <span>Doutores:</span>
+                <select name="doutores" id="doutores" disabled>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="inputData">
+                <span>Data:</span>
+                <input type="date" name="data" id="data" disabled>
+            </div>
+            <div class="botoes">
+                <input type="submit" value="Marcar" onclick="inserirDados()">
+                <input type="button" value="Cancelar" onclick="reload()">
+            </div>
+
+        </div>
+        <div id="consultas" style="visibility: hidden;">
+
+        </div>
+        <div id="sobre" style="visibility: hidden;">
+            <h1>Sobre a Aplicação</h1>
+            <p>Este site é de total aprendizagem acadêmica, pois queríamos testar nossos conhecimentos em programação web , programação mobile e banco de dados cloud.
+                O site é destinado para clinicas médicas onde o paciente poderá fazer os seus agendamentos de consultas como também visualizar as consultas de acordo com as especialidades listadas no painel da clinica. Além do site também densenvolvemos uma app onde o usuário também pode optar por fazer seus agendamentos atraves de um dispositivo mobile.
+            </p>
+            <h2>Desenvolvedores</h2>
+            <h3>
+                Dev: Jonnatan Farias<br>
+                Dev: Klisman Mateus<br>
+                Dev: Marcos Paulo<br>
+            </h3>
+        </div>
+    </main>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js" defer></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js" defer></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-database-compat.js" defer></script>
+<script src="./script/dependences.js" type="text/javascript" defer></script>
+
+</html>

@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+header {
+    background-color: #46abdf;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-desktop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 60px;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+}
+
+img {
+    max-width: 30%;
+    min-width: 50px;
+}
+
+.navbar-desk{
+    position: relative;
+    left: 15%;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.usuario{
+    height: 85%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    margin-right: 1%;
+}
+
+.acoes{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+.acoes i{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.foto{
+    background-color: #fff;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#inicio{
+    position: absolute;
+    top: 10%;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inicio h1{
+    margin-top: 50px;
+    font-weight: 900;
+    font-size: calc(1em + 3vw)
+}
+
+#inicio h2{
+    font-weight: 300;
+    font-size: calc(0.6em + 1vw);
+    margin-bottom: 50px;
+}
+
+#inicio p{
+    text-align: justify;
+}
+
+#agendar{
+    position: absolute;
+    top: 15%;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+
+input[type='date'], select{
+    margin: 0px 20px;
+    height: 40px;
+    width: 350px;
+    min-width: 220px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+input[type='button'], input[type='submit']{
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: #46abdf;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+input[type='button']:hover, input[type='submit']:hover{
+    background-color: #78c1e6;
+}
+
+#agendar h1 {
+    font-size: calc(1.2em + 3vw);
+    font-weight: 800;
+}
+
+#agendar span{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
+#agendar .categorias{
+    width: 90%;
+    height: 5%;
+    display: flex;
+    margin-left: 5px;
+    justify-content: center;
+}
+
+#agendar .medicos{
+    margin-top: 20px;
+    width: 90%;
+    height: 5%;
+    display: flex;
+    margin-left: 5px;
+    gap: 50px;
+    justify-content: center;
+}
+
+#agendar .inputData{
+    margin-top: 20px;
+    width: 90%;
+    height: 5%;
+    display: flex;
+    margin-left: 5px;
+    gap: 90px;
+    justify-content: center;
+}
+
+#agendar .botoes{
+    width: 90%;
+    height: 5%;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#consultas{
+    display: flex;
+    position: absolute;
+    top: 15%;
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#consultas #card{
+    width: 270px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border:1px solid #46abdf;
+    
+}
+
+#consultas #card h1{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+#consultas #card h3{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#consultas #card .campoData{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+#consultas #card .campoEspecialidade{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+#consultas #card .campoMedico{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+#sobre{
+    position: absolute;
+    top: 10%;
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sobre h1{
+    margin-top: 50px;
+    font-weight: 900;
+    font-size: calc(1em + 3vw)
+}
+
+#sobre p{
+    margin-top: 50px;
+    text-align: justify;
+}
+
+#sobre h2{
+    margin-top: 50px;
+    font-size: calc(0.6em + 1vw);
+}
+
+#open-nav,
+#close-nav {
+    font-size: 2rem;
+    padding: 0.8rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+#open-nav {
+    display: none;
+}
+
+#close-nav {
+    position: relative;
+    left: 92%;
+    bottom: 3%;
+
+}
+
+#navbar-mobile {
+    display: none;
+}
+
+
+#navbar-mobile {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(22, 22, 22, 0.993);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    transition: .4s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#navbar-mobile a {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+}
+#navbar-mobile i{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#navbar-mobile .foto {
+    width: 100px;
+    height: 100px;
+    position:absolute;
+}
+#navbar-mobile h3{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+#navbar-mobile.menu-active {
+    left: 0;
+}
+
+dialog{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius:  .5rem;
+    box-shadow:0 0 1em rgb(0 0 0 / .3);
+    width: 350px;
+    height: 210px;
+    
+}
+
+dialog h1{
+    text-align: center;
+    background-color: rgb(240, 232, 232);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+dialog p{
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    top: 22%;
+    font-size: 1.3rem;
+    color: black;
+    cursor: auto;
+    margin-bottom: 0;
+}
+
+dialog .close{
+    position: absolute;
+    left: 50%;
+    top: 170px;
+    width: 6rem;
+    height: 1.7rem;
+    border: none;
+    background-color: #46abdf;
+    color: #fff;
+    transform: translate(-50%, 0%);
+    cursor: pointer;
+}
+
+dialog .close:hover{
+    background-color: #78c1e6;
+}
+
+
+
+@media (max-width:1170px){
+    .navbar-desk{
+        display: none;
+    }
+    .usuario{
+        display: none;
+    }
+    #open-nav {
+        display: block;
+    }
+
+    body{
+        overflow: auto;
+    }
+   
+    
+}
