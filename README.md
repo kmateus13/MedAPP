@@ -1,12 +1,13 @@
 <div align="center">
-img src="" width="0px" /
+<img src="https://user-images.githubusercontent.com/111935234/228375672-ae888411-5d61-4774-9fa0-ec128c6ddb3c.png" width="150px">
 </div>
 
 <h1>MedAPP</h1>
 Este aplicativo foi desenvolvido inteiramente como parte de nosso aprendizado acadêmico, visando testar nossos conhecimentos em programação web, programação mobile e banco de dados em nuvem. Ele foi projetado para clínicas médicas, permitindo que os pacientes agendem consultas e visualizem seus agendamentos. Além disso, desenvolvemos uma versão mobile do aplicativo que se comunica com a versão web através do banco de dados compartilhado.
 
 <h2>Instalação</h2>
-Não é necessário instalar nada. Basta baixar ou clonar o repositório e abrir o arquivo index.html no seu navegador.
+ Basta baixar ou clonar o repositório e abrir o arquivo index.html no seu navegador.<br>
+ <b>obs:</b> É necessário ter as dependências do Firebase
 
 <h2>Como Utilizar</h2>
 <ol>
@@ -46,10 +47,10 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 </ul>
 
 <h2>Autor</h2>
-Este projeto foi desenvolvido por <b>Klisman Mateus</b> como um exercício para praticar e aprimorar habilidades em HTML, CSS, JavaScript e Firebse.
+Este projeto foi desenvolvido por <b>Klisman Mateus</b> como um exercício para praticar e aprimorar habilidades em HTML, CSS, JavaScript e Firebase.
 
 
 <h2>Versão Mobile</h2>
-Uma versão mobile do aplicativo também está disponível, desenvolvida por JonnatanFarias. Para acessar a versão mobile, visite <a href="https://github.com/JonnatanFarias/MedApp">Versão Mobile</a>.
+Uma versão mobile do aplicativo também está disponível, desenvolvida por <a href="https://github.com/JonnatanFarias">JonnatanFarias</a>. Para acessar a versão mobile, visite <a href="https://github.com/JonnatanFarias/MedApp">Versão Mobile</a>.
 
 <b>Observação:</b> A versão mobile e a versão web compartilham o mesmo banco de dados, portanto, os dados inseridos em uma plataforma estarão disponíveis na outra.
