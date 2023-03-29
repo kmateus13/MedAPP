@@ -4,6 +4,8 @@
 
 <h1>MedAPP</h1>
 Este aplicativo foi desenvolvido inteiramente como parte de nosso aprendizado acadêmico, visando testar nossos conhecimentos em programação web, programação mobile e banco de dados em nuvem. Ele foi projetado para clínicas médicas, permitindo que os pacientes agendem consultas e visualizem seus agendamentos. Além disso, desenvolvemos uma versão mobile do aplicativo que se comunica com a versão web através do banco de dados compartilhado.
+</br>
+Para acessar o projeto, clique <a href="https://medapp1.netlify.app/">aqui</a>.
 
 <h2>Instalação</h2>
  Basta baixar ou clonar o repositório e abrir o arquivo index.html no seu navegador.<br>
