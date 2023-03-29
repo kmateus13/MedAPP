@@ -9,7 +9,7 @@ Para acessar o projeto, clique <a href="https://medapp1.netlify.app/">aqui</a>.
 
 <h2>Instalação</h2>
  Basta baixar ou clonar o repositório e abrir o arquivo index.html no seu navegador.<br>
- <b>obs:</b> É necessário ter as dependências do Firebase
+ <b>Obs:</b> É necessário ter as dependências do Firebase
 
 <h2>Como Utilizar</h2>
 <ol>
